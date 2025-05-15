@@ -1,41 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Barbearia Estilo</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content=" #000000">
-    <link rel="apple-touch-icon" href="icon-192x192.png">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Barbearia Premium | Estilo & Tradição</title>
 
+    <!-- Manifest e Meta Tags -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#000000">
+    <link rel="apple-touch-icon" href="assets/icons/icon-192x192.png">
+
+    <!-- Favicon (opcional) -->
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
 <body>
 
     <header class="gradient-header">
-        <h1>Barbearia Estilo</h1>
+        <img src="./assets/images/logo GLEBISON.jpg" alt="Logo da Barbearia" class="logo">
+        <h1>Barbearia Premium</h1>
         <nav>
             <a href="#home">Home</a>
             <a href="#servicos">Serviços</a>
-            <a href="#agendamento">Agendamento</a>
-            <a href="#contato">Contato</a>
+            <a href="#agendamento">Agendar</a>
+            <a href="#sobre">Sobre</a>
         </nav>
     </header>
 
     <section id="home">
-        <h2>Bem-vindo à Barbearia Estilo</h2>
-        <p>Cortes modernos e atendimento de qualidade. Agende agora!</p>
-        <a href="#agendamento" class="cta-button">Agendar Horário</a>
+        <h2>Onde a tradição encontra o estilo moderno</h2>
+        <p>Transforme seu visual com cortes exclusivos feitos por mestres barbeiros.</p>
+        <a href="#agendamento" class="cta-button">Agendar Consulta VIP</a>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>A Barbearia Premium nasceu da paixão pelo ofício tradicional dos barbeiros, combinada com o toque moderno que você merece. Oferecemos um ambiente refinado, com atendimento personalizado e cortes assinados pelos melhores profissionais da cidade.</p>
     </section>
 
     <section id="servicos">
-        <h2>Nossos Serviços</h2>
-        <div id="lista-servicos" class="cards-container"></div>
+        <h2>Nossos Serviços Premium</h2>
+        <div class="cards-container" id="cards-servicos"></div>
     </section>
 
     <section id="agendamento">
-        <h2>Agendar Horário</h2>
+        <h2>Agende Seu Corte VIP</h2>
         <form id="form-agendamento">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" required />
@@ -43,9 +54,9 @@
             <label for="servico">Serviço:</label>
             <select id="servico" required>
                 <option value="">Selecione</option>
-                <option value="Corte Simples - R$30">Corte Simples - R$30</option>
-                <option value="Corte + Barba - R$50">Corte + Barba - R$50</option>
-                <option value="Barba - R$25">Barba - R$25</option>
+                <option value="Corte Assinatura - R$600">Corte Assinatura - R$600</option>
+                <option value="Pacote Completo 3 Meses - R$1500">Pacote Completo 3 Meses - R$1500</option>
+                <option value="Corte + Barba + Sobrancelha - R$450">Corte + Barba + Sobrancelha - R$450</option>
             </select>
 
             <label for="data">Data:</label>
@@ -54,19 +65,22 @@
             <label for="hora">Hora:</label>
             <input type="time" id="hora" required />
 
-            <button type="submit">Agendar</button>
+            <button type="submit">Reservar Horário</button>
         </form>
         <p id="mensagem"></p>
     </section>
 
     <section id="contato">
         <h2>Contato</h2>
-        <p>📍 Rua Menino do Engenho, 123, Jd. São Saverio</p>
+        <p>📍 Avenida Paulista, 1234 - São Paulo/SP</p>
         <p>📞 (11) 91471-3070</p>
-        <p><a href="https://wa.me/5511914713070 " target="_blank">Fale pelo WhatsApp</a></p>
+        <p><a href="https://wa.me/5511914713070 " target="_blank">💬 Agendar via WhatsApp</a></p>
     </section>
+
+    <footer>
+        <p>&copy; 2025 Barbearia Premium. Todos os direitos reservados.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
-
 </html>
